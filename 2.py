@@ -18,6 +18,7 @@ def search(text: str, pattern: str):
         it += 1
         text_hash, it_hash_2, ins_hash_2 = hash(text[i:i+M], M)
         it += it_hash_2
+        instructions += ins_hash_2
         instructions += 1
         if pattern_hash == text_hash:
             instructions += 1
